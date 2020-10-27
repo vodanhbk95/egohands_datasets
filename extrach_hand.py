@@ -48,7 +48,7 @@ for video in range(number_videos):
                 cv2.drawContours(mask,[cnt],0,255,-1)
 
                 image_mask[...,3] = mask
-                cv2.imwrite(str(video_id)+str('_') + str(file_name.split('.')[0]) +'_'+ f'{j}_hand.png', image_mask[y_min:y_max, x_min:x_max])
+                cv2.imwrite(str(video_id)+ '_' + str(file_name.split('.')[0]) + '_' + f'{j}_hand.png', image_mask[y_min:y_max, x_min:x_max])
                 
 
         
